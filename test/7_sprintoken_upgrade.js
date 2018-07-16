@@ -408,7 +408,7 @@ contract("Spring token upgrade with token vesting",function(accounts){
                 //console.log(bal);
                 assert.equal(bal,1,"they are equal");
             }).catch(err=>{
-               // console.log(err);
+                console.log(err);
                 assert.isUndefined(err,"they are equal");
             });
         });
