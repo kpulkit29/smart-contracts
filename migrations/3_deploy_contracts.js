@@ -2,6 +2,7 @@ var VanityURL_Upgrade = artifacts.require("./VanityURL_Upgrade.sol");
 var VanityStorage = artifacts.require("./VanityStorage.sol");
 var TokenStorage=artifacts.require("./TokenStorage.sol");
 var SPRINGToken_Upgrade=artifacts.require("./SPRINGToken_Upgrade.sol");
+var TokenVesting=artifacts.require("./TokenVesting.sol");
 module.exports = function(deployer) {
     deployer.deploy(VanityURL_Upgrade, VanityStorage.address).
     then(() => {
@@ -15,5 +16,6 @@ module.exports = function(deployer) {
         //return inst.allowAccess(VanityURL_Upgrade.address);
       });
     });
- 
+    //to deploy token vesting contract
+   
   };
