@@ -348,7 +348,7 @@ contract("Spring token upgrade with token vesting",function(accounts){
                // console.log(event);
                 return vanityInstance.balanceOf.call(accounts[8])
             }).then(bal=>{
-                console.log(bal.toNumber());
+              //  console.log(bal.toNumber());
                 assert.equal(4,bal.toNumber(),"the balance should be equal")
             }).catch(err=>{
 
@@ -405,10 +405,10 @@ contract("Spring token upgrade with token vesting",function(accounts){
             }).then((ans)=>{
                 return vanityInstance.balanceOf.call(accounts[9])
             }).then((bal)=>{
-                console.log(bal);
+                //console.log(bal);
                 assert.equal(bal,1,"they are equal");
             }).catch(err=>{
-                console.log(err);
+               // console.log(err);
                 assert.isUndefined(err,"they are equal");
             });
         });
